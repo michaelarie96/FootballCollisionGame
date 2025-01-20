@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">HW1_208388124</string>
+    <string name="app_name">Football Collision</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="score_list_title">High Scores</string>
+    <string name="menu_button_slow">Buttons Mode - Slow</string>
+    <string name="menu_button_fast">Buttons Mode - Fast</string>
+    <string name="menu_button_sensors">Sensors Mode</string>
+    <string name="game_over">Game Over!</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="submit">Submit</string>
 </resources>

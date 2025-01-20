@@ -22,8 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/life_height"
             app:srcCompat="@drawable/life"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/main_IMG_life2"
@@ -31,29 +30,198 @@
             android:layout_height="@dimen/life_height"
             app:srcCompat="@drawable/life"
             android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            />
+            android:layout_marginHorizontal="10dp" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/main_IMG_life3"
             android:layout_width="0dp"
             android:layout_height="@dimen/life_height"
             app:srcCompat="@drawable/life"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/odometerContainer"
+        android:layout_width="@dimen/odometer_cont_width"
+        android:layout_height="@dimen/odometer_cont_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/layout_margin"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/main_TXT_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="0 YDS"/>
 
     </LinearLayout>
 
-    <!-- Adding a horizontal LinearLayout to contain our three lanes -->
     <LinearLayout
         android:id="@+id/lanesContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/livesContainer"
         android:layout_above="@id/playerContainer"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
+        <!-- Far Left Lane -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/farLeftLane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_block8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_left_barrier8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <!-- Left Lane -->
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -64,45 +232,149 @@
             android:orientation="vertical"
             android:gravity="center">
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_left_block1"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1" />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_left_block2"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_left_block3"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_left_block4"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_left_block5"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_left_block6"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_block8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_left_barrier8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <!-- Middle Lane -->
@@ -114,45 +386,149 @@
             android:orientation="vertical"
             android:gravity="center">
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_middle_block1"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1" />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_middle_block2"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_middle_block3"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_middle_block4"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_middle_block5"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_middle_block6"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_block8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_middle_barrier8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <!-- Right Lane -->
@@ -164,46 +540,304 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_right_block1"
-                android:layout_width="@dimen/block_width"
+            <FrameLayout
+                android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1" />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_right_block2"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_right_block3"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_right_block4"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_right_block5"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/main_IMG_right_block6"
-                android:layout_width="@dimen/block_width"
-                android:layout_height="0dp"
-                app:srcCompat="@drawable/block"
-                android:layout_weight="1"/>
+                android:layout_weight="1">
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_block8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_right_barrier8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+        <!-- Far Right Lane -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/farRightLane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier1"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier2"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier3"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier4"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier5"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier6"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier7"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_block8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/block" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_IMG_far_right_barrier8"
+                    android:layout_width="@dimen/block_width"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/barrier" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>
 
     <LinearLayout
@@ -213,6 +847,12 @@
         android:orientation="horizontal"
         android:layout_above="@id/navigationContainer">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_far_left_player"
+            android:layout_width="@dimen/player_width"
+            android:layout_height="@dimen/player_height"
+            app:srcCompat="@drawable/player"
+            android:layout_weight="1"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/main_IMG_left_player"
@@ -220,12 +860,14 @@
             android:layout_height="@dimen/player_height"
             app:srcCompat="@drawable/player"
             android:layout_weight="1"/>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/main_IMG_middle_player"
             android:layout_width="@dimen/player_width"
             android:layout_height="@dimen/player_height"
             app:srcCompat="@drawable/player"
             android:layout_weight="1"/>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/main_IMG_right_player"
             android:layout_width="@dimen/player_width"
@@ -233,7 +875,12 @@
             app:srcCompat="@drawable/player"
             android:layout_weight="1"/>
 
-
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_far_right_player"
+            android:layout_width="@dimen/player_width"
+            android:layout_height="@dimen/player_height"
+            app:srcCompat="@drawable/player"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout

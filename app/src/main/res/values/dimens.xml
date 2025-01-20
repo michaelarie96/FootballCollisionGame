@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="lives_cont_width">140dp</dimen>
+    <dimen name="lives_cont_width">150dp</dimen>
     <dimen name="lives_cont_height">40dp</dimen>
     <dimen name="life_height">40dp</dimen>
-    <dimen name="block_width">60dp</dimen>
-    <dimen name="player_height">60dp</dimen>
-    <dimen name="player_width">60dp</dimen>
-    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="block_width">48dp</dimen>
+    <dimen name="player_height">48dp</dimen>
+    <dimen name="player_width">48dp</dimen>
+    <dimen name="layout_margin">12dp</dimen>
     <dimen name="nav_cont_height">40dp</dimen>
+    <dimen name="odometer_cont_width">150dp</dimen>
+    <dimen name="odometer_cont_height">40dp</dimen>
 </resources>
