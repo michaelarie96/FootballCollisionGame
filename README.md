@@ -72,3 +72,7 @@ git clone https://github.com/yourusername/football-collision.git
 - Google Play Services
 - Device with accelerometer (for Sensor Mode)
 - Location services enabled (for score tracking)
+
+## Acknowledgments
+
+- Developed as part of an Android development course project
