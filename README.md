@@ -26,8 +26,8 @@ Football Collision is an exciting Android game that combines quick reflexes, str
 ## 🎯 How to Play
 
 1. Choose your preferred game mode from the main menu
-2. Navigate your player between lanes to avoid obstacles
-3. Collect power-ups to gain extra lives
+2. Navigate your quarterback between lanes to avoid cones
+3. Jump over barriers to gain extra lives
 4. Try to travel as far as possible
 5. Submit your score to compete on the leaderboard
 6. View score locations on the integrated map
@@ -50,21 +50,10 @@ Football Collision is an exciting Android game that combines quick reflexes, str
 
 ## 🔧 Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/football-collision.git
-```
-
+To run this game on your Android device:
+1. Clone this repository
 2. Open the project in Android Studio
-
-3. Add your Google Maps API key in `AndroidManifest.xml`:
-```xml
-<meta-data
-    android:name="com.google.android.geo.API_KEY"
-    android:value="YOUR_API_KEY" />
-```
-
-4. Build and run the project on your Android device or emulator
+3. Build and run on your Android device or emulator
 
 ## 🔑 Requirements
 
